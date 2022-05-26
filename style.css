@@ -133,10 +133,10 @@ button {
   color: #888;
 }
 /* Edit Task */
-.unordered-list .list-item .input-task[type=text] {
+.unordered-list .list-item .input-task[type="text"] {
   display: none;
 }
-.unordered-list .list-item.edit-mode .input-task[type=text] {
+.unordered-list .list-item.edit-mode .input-task[type="text"] {
   display: inline-block;
   width: 224px;
 }
