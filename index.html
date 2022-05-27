@@ -7,49 +7,61 @@
   </head>
   <body class="page">
     <article class="todo-app">
-      <header class="description">
-        <img class="image-instruction" src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
-        <a class="more-inf"
+      <header class="todo-app__description">
+        <img class="todo-app__image-instruction"
+            src="./eisenhower-matrix.jpg"
+            alt="Eisenhower matrix">
+        <a class="todo-app__more-inf"
             href="https://goal-life.com/page/method/matrix-eisenhower">
             Want more details?
         </a>
       </header>
-      <div class="wrapper">
-        <section class="section-add-item">
-          <label class="title-new-task" for="new-task">Add Item</label>
-          <div class="task-row-wrapper">
-            <input id="new-task" class="input-task" type="text">
+      <div class="todo-app__wrapper wrapper">
+        <section class="todo-app__section-add-item
+            section-add-item">
+          <label class="section-add-item__title-new-task"
+              for="new-task">
+              Add Item
+          </label>
+          <div class="section-add-item__wrapper">
+            <input class="input-task" id="new-task" type="text">
             <button class="button">Add</button>
           </div>
         </section>
-        <section class="section-todo">
-          <h3 class="title">Todo</h3>
-          <ul class="unordered-list" id="incomplete-tasks">
-            <li class="list-item">
+        <section class="todo-app__section-todo">
+          <h3 class="section-todo__title title">Todo</h3>
+          <ul class="section-todo__list list" id="incomplete-tasks">
+            <li class="list__item">
               <input class="input-checkbox" type="checkbox">
               <label class="text-task">Pay Bills</label>
-              <input type="text" class="input-task">
-              <button class="edit button">Edit</button>
-              <button class="delete button"><img class="image-remove" src="./remove.svg" alt=""></button>
+              <input class="input-task" type="text" >
+              <button class="button button_edit">Edit</button>
+              <button class="button button_delete">
+                <img class="image-remove" src="./remove.svg" alt="">
+              </button>
             </li>
-            <li class="list-item edit-mode">
+            <li class="list__item list__item_edit">
               <input class="input-checkbox" type="checkbox">
               <label class="text-task">Go Shopping</label>
-              <input type="text" value="Go Shopping" class="input-task">
-              <button class="edit button">Save</button>
-              <button class="delete button"><img class="image-remove" src="./remove.svg" alt=""></button>
+              <input class="input-task" type="text" value="Go Shopping">
+              <button class="button button_edit">Save</button>
+              <button class="button button_delete">
+                <img class="image-remove" src="./remove.svg" alt="">
+              </button>
             </li>
           </ul>
         </section>
-        <section class="section-completed">
-          <h3 class="title">Completed</h3>
-          <ul class="unordered-list" id="completed-tasks">
-            <li class="list-item">
+        <section class="todo-app__section-completed">
+          <h3 class="section-completed__title title">Completed</h3>
+          <ul class="section-completed__list list" id="completed-tasks">
+            <li class="list__item">
               <input class="input-checkbox" type="checkbox" checked>
               <label class="text-task">See the Doctor</label>
               <input type="text" class="input-task">
-              <button class="edit button">Edit</button>
-              <button class="delete button"><img class="image-remove" src="./remove.svg" alt=""></button>
+              <button class="button button_edit">Edit</button>
+              <button class="button button_delete">
+                <img class="image-remove" src="./remove.svg" alt="">
+              </button>
             </li>
           </ul>
         </section>

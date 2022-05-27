@@ -4,21 +4,21 @@
   color: #333;
   font-family: lato, sans-serif;
 }
-.description {
+.todo-app__description {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.description .image-instruction {
+.todo-app__description .todo-app__image-instruction {
   width: 100%;
 }
-.description .more-inf {
+.todo-app__description .todo-app__more-inf {
   font-family: fantasy, cursive;
 }
 @media (max-width:768px) {
 
-  .description {
+  .todo-app__description {
     text-align: center;
   }
 
@@ -34,7 +34,7 @@
   display: inline-block;
   flex-grow: 1;
 }
-.task-row-wrapper {
+.section-add-item__wrapper {
   display: flex;
 }
 ul {
@@ -63,7 +63,7 @@ button {
 }
 /* Heading */
 .title,
-.title-new-task[for="new-task"] {
+.section-add-item__title-new-task[for="new-task"] {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -88,7 +88,7 @@ button {
   color: #333;
 }
 /* New Task */
-.title-new-task[for="new-task"] {
+.section-add-item__title-new-task[for="new-task"] {
   display: block;
   margin: 0 0 20px;
 }
@@ -96,7 +96,7 @@ button {
   width: 318px;
 }
 /* Task list */
-.list-item {
+.list__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -104,27 +104,27 @@ button {
   justify-content: space-between;
   align-items: center;
 }
-.list-item > * {
+.list__item > * {
   vertical-align: middle;
 }
-.list-item > .input-checkbox[type="checkbox"] {
+.list__item > .input-checkbox[type="checkbox"] {
   margin: 0 10px;
 }
-.list-item > .text-task {
+.list__item > .text-task {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-.list-item > .input-task[type="text"] {
+.list__item > .input-task[type="text"] {
   width: 226px;
 }
-.button.delete .image-remove {
+.button_delete .image-remove {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.button.delete .image-remove:hover {
+.button_delete .image-remove:hover {
   transform: rotateZ(0);
 }
 /* Completed */
@@ -133,13 +133,13 @@ button {
   color: #888;
 }
 /* Edit Task */
-.unordered-list .list-item .input-task[type="text"] {
+.list .list__item .input-task[type="text"] {
   display: none;
 }
-.unordered-list .list-item.edit-mode .input-task[type="text"] {
+.list .list__item_edit .input-task[type="text"] {
   display: inline-block;
   width: 224px;
 }
-.unordered-list .list-item.edit-mode .text-task {
+.list .list__item_edit .text-task {
   display: none;
 }
