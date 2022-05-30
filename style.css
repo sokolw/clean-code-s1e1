@@ -157,12 +157,14 @@ button {
 }
 
 /* Completed */
+
 #completed-tasks .text-task {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
+
 .list .list__item .input-task[type="text"] {
   display: none;
 }
