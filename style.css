@@ -4,26 +4,26 @@
   color: #333;
   font-family: lato, sans-serif;
 }
-.todo-app__description {
+.description {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.todo-app__description .todo-app__image-instruction {
+.description__image-instruction {
   width: 100%;
 }
-.todo-app__description .todo-app__more-inf {
+.description__more-inf {
   font-family: fantasy, cursive;
 }
 @media (max-width:768px) {
 
-  .todo-app__description {
+  .description {
     text-align: center;
   }
 
 }
-.wrapper {
+.todo-app {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -107,7 +107,7 @@ button {
 .list__item > * {
   vertical-align: middle;
 }
-.list__item > .input-checkbox[type="checkbox"] {
+.list__item > .complete-task[type="checkbox"] {
   margin: 0 10px;
 }
 .list__item > .text-task {
