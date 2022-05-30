@@ -1,21 +1,26 @@
 /* Basic Style */
+
 .page {
   background-color: #f8f8f8;
   color: #333;
   font-family: lato, sans-serif;
 }
+
 .description {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .description__image-instruction {
   width: 100%;
 }
+
 .description__more-inf {
   font-family: fantasy, cursive;
 }
+
 @media (max-width:768px) {
 
   .description {
@@ -23,32 +28,39 @@
   }
 
 }
+
 .todo-app {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .text-task,
 .input-task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
+
 .section-add-item__wrapper {
   display: flex;
 }
+
 ul {
   margin: 0;
   padding: 0px;
 }
+
 li,
 h3 {
   list-style: none;
 }
+
 input,
 button {
   outline: none;
 }
+
 .button {
   background: none;
   border: 0px;
@@ -58,10 +70,13 @@ button {
   font-family: lato, sans-serif;
   cursor: pointer;
 }
+
 .button:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
+
 .title,
 .section-add-item__title-new-task[for="new-task"] {
   color: #333;
@@ -72,6 +87,7 @@ button {
   margin: 0;
   text-transform: uppercase;
 }
+
 .input-task[type="text"] {
   margin: 0;
   font-size: 18px;
@@ -84,18 +100,24 @@ button {
   font-family: lato, sans-serif;
   color: #888;
 }
+
 .input-task[type="text"]:focus {
   color: #333;
 }
+
 /* New Task */
+
 .section-add-item__title-new-task[for="new-task"] {
   display: block;
   margin: 0 0 20px;
 }
+
 #new-task {
   width: 318px;
 }
+
 /* Task list */
+
 .list__item {
   overflow: hidden;
   padding: 20px 0;
@@ -104,42 +126,52 @@ button {
   justify-content: space-between;
   align-items: center;
 }
+
 .list__item > * {
   vertical-align: middle;
 }
+
 .list__item > .complete-task[type="checkbox"] {
   margin: 0 10px;
 }
+
 .list__item > .text-task {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
+
 .list__item > .input-task[type="text"] {
   width: 226px;
 }
+
 .button_delete .image-remove {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .button_delete .image-remove:hover {
   transform: rotateZ(0);
 }
+
 /* Completed */
 #completed-tasks .text-task {
   text-decoration: line-through;
   color: #888;
 }
+
 /* Edit Task */
 .list .list__item .input-task[type="text"] {
   display: none;
 }
+
 .list .list__item_edit .input-task[type="text"] {
   display: inline-block;
   width: 224px;
 }
+
 .list .list__item_edit .text-task {
   display: none;
 }
